@@ -50,11 +50,7 @@ NBIS_SRC = \
 	nbis/mindtct/ridges.c \
 	nbis/mindtct/shape.c \
 	nbis/mindtct/sort.c \
-	nbis/mindtct/util.c \
-        nbis/nfiq/nfiq.c \
-        nbis/nfiq/nfiqgbls.c \
-        nbis/nfiq/nfiqread.c \
-        nbis/nfiq/znorm.c
+	nbis/mindtct/util.c
 
 libfprint_la_CFLAGS = -fvisibility=hidden -I$(srcdir)/nbis/include $(LIBUSB_CFLAGS) $(GLIB_CFLAGS) $(CRYPTO_CFLAGS) $(AM_CFLAGS)
 libfprint_la_LDFLAGS = -version-info @lt_major@:@lt_revision@:@lt_age@
